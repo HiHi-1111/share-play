@@ -124,7 +124,7 @@ async def handle_mouse_control(websocket):
                    f"Right clicks: {stats['right_clicks']}, Double clicks: {stats['double_clicks']}, "
                    f"Scrolls: {stats['scrolls']}")
 
-async def main():
+async def start_server():
     # Start WebSocket server
     host = "0.0.0.0"  # Listen on all interfaces
     port = 3000
@@ -139,6 +139,6 @@ async def main():
 
 if __name__ == "__main__":
     try:
-        asyncio.run(main())
+        asyncio.run(start_server())
     except KeyboardInterrupt:
         logger.info("Server stopped by user")
