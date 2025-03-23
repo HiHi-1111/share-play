@@ -31,30 +31,15 @@ def fractional_to_absolute(x_frac, y_frac):
     y_abs = int(y_frac * SCREEN_HEIGHT)
     return x_abs, y_abs
 
-async def handle_mouse_control(websocket, path):
+async def handle_mouse_control(websocket):
     """
     Handle incoming WebSocket connections and process mouse control commands.
 
     Parameters:
     websocket (websockets.WebSocketServerProtocol): The WebSocket connection object representing the client connection.
-    path (str): The URL path of the WebSocket connection (not used in this function).
-
-    Functionality:
-    - Logs the IP address of the connected client and the screen dimensions of the server.
-    - Initializes a dictionary to track the number of different mouse events (moves, clicks, right-clicks, double-clicks, scrolls).
-    - Continuously listens for messages from the client and processes them based on the event type:
-        - Move: Moves the mouse to the specified fractional coordinates.
-        - Click: Performs a mouse click at the specified fractional coordinates or at the current position.
-        - Double Click: Performs a double-click at the specified fractional coordinates or at the current position.
-        - Right Click: Performs a right-click at the specified fractional coordinates or at the current position.
-        - Scroll: Scrolls the mouse wheel by the specified amount.
-    - Sends an acknowledgment message back to the client after processing each event.
-    - Logs any errors that occur while handling client messages.
-    - Logs a summary of the session, including the duration and the number of each type of mouse event.
     """
     client_ip = websocket.remote_address[0]
-    logger.info(f"Client connected from {client_ip}")
-    logger.info(f"Screen dimensions: {SCREEN_WIDTH}x{SCREEN_HEIGHT}")
+    message_count = 0
     
     # Track activity statistics
     stats = {
@@ -69,49 +54,46 @@ async def handle_mouse_control(websocket, path):
     
     try:
         async for message in websocket:
+            message_count += 1
+            print(f"Messages received: {message_count}")
+            
             data = json.loads(message)
+            
+            # Add handling for ping message
+            if data["type"] == "ping":
+                await websocket.send(json.dumps({
+                    "status": "ok",
+                    "screen_width": SCREEN_WIDTH,
+                    "screen_height": SCREEN_HEIGHT
+                }))
+                continue
             
             # Handle different types of mouse events
             if data["type"] == "move":
-                # Convert fractional coordinates to absolute screen coordinates
                 x_abs, y_abs = fractional_to_absolute(data["x"], data["y"])
                 pyautogui.moveTo(x_abs, y_abs)
-
-                # Update the stats
                 stats["moves"] += 1
-                
-                # Log every 100 moves to avoid excessive logging
-                if stats["moves"] % 100 == 0:
-                    logger.info(f"Processed {stats['moves']} mouse movements")
-                    logger.debug(f"Last move: frac({data['x']:.3f}, {data['y']:.3f}) → abs({x_abs}, {y_abs})")
 
             elif data["type"] == "click":
                 button = data.get("button", "left")
                 if "x" in data and "y" in data:
-                    # Click at specific position
                     x_abs, y_abs = fractional_to_absolute(data["x"], data["y"])
                     pyautogui.click(x=x_abs, y=y_abs, button=button)
                 else:
-                    # Click at current position
                     pyautogui.click(button=button)
                                     
-                x, y = pyautogui.position()
-                frac_x, frac_y = x/SCREEN_WIDTH, y/SCREEN_HEIGHT
                 stats["clicks"] += 1
-                logger.info(f"{button.capitalize()} mouse click at abs({x}, {y}) / frac({frac_x:.3f}, {frac_y:.3f})")
                 
             elif data["type"] == "double_click":
-                button = data.get("button", "left")
-                if "x" in data and "y" in data:
-                    x_abs, y_abs = fractional_to_absolute(data["x"], data["y"])
-                    pyautogui.doubleClick(x=x_abs, y=y_abs, button=button)
-                else:
-                    pyautogui.doubleClick(button=button)
+                if stats["double_click"]< 100 == True:
+                    button = data.get("button", "left")
+                    if "x" in data and "y" in data:
+                        x_abs, y_abs = fractional_to_absolute(data["x"], data["y"])
+                        pyautogui.doubleClick(x=x_abs, y=y_abs, button=button)
+                    else:
+                        pyautogui.doubleClick(button=button)
                 
-                x, y = pyautogui.position()
-                frac_x, frac_y = x/SCREEN_WIDTH, y/SCREEN_HEIGHT
                 stats["double_clicks"] += 1
-                logger.info(f"{button.capitalize()} double-click at abs({x}, {y}) / frac({frac_x:.3f}, {frac_y:.3f})")
                 
             elif data["type"] == "right_click":
                 if "x" in data and "y" in data:
@@ -120,24 +102,20 @@ async def handle_mouse_control(websocket, path):
                 else:
                     pyautogui.rightClick()
                 
-                x, y = pyautogui.position()
-                frac_x, frac_y = x/SCREEN_WIDTH, y/SCREEN_HEIGHT
                 stats["right_clicks"] += 1
-                logger.info(f"Right click at abs({x}, {y}) / frac({frac_x:.3f}, {frac_y:.3f})")
                 
             elif data["type"] == "scroll":
                 pyautogui.scroll(data["amount"])
-                x, y = pyautogui.position()
-                frac_x, frac_y = x/SCREEN_WIDTH, y/SCREEN_HEIGHT
                 stats["scrolls"] += 1
-                logger.info(f"Scroll: {data['amount']} at abs({x}, {y}) / frac({frac_x:.3f}, {frac_y:.3f})")
             
             # Send acknowledgment
-            await websocket.send(json.dumps({
+            response = {
                 "status": "ok",
                 "screen_width": SCREEN_WIDTH,
                 "screen_height": SCREEN_HEIGHT
-            }))
+            }
+            await websocket.send(json.dumps(response))
+            
     except Exception as e:
         logger.error(f"Error handling client: {e}")
     finally:
@@ -158,8 +136,13 @@ async def start_server():
     logger.info(f"Using fractional coordinates (0,0) to (1,1)")
     logger.info(f"Log file: mouse_server.log")
     
-    async with websockets.serve(handle_mouse_control, host, port):
+    try:
+        server = await websockets.serve(handle_mouse_control, host, port)
+        logger.info("Server started successfully!")
         await asyncio.Future()  # Run forever
+    except Exception as e:
+        logger.error(f"Failed to start server: {e}")
+        raise
 
 def run_server():
     try:

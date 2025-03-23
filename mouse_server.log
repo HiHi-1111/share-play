@@ -1,0 +1,1046 @@
+2025-03-23 18:16:11,122 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:16:11,123 - INFO - Screen size: 2560x1440
+2025-03-23 18:16:11,123 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:16:11,123 - INFO - Log file: mouse_server.log
+2025-03-23 18:16:11,251 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:26:45,076 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:26:45,077 - INFO - Screen size: 2560x1440
+2025-03-23 18:26:45,077 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:26:45,077 - INFO - Log file: mouse_server.log
+2025-03-23 18:26:45,125 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:26:45,125 - INFO - Server started successfully!
+2025-03-23 18:32:56,691 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:32:56,691 - INFO - Screen size: 2560x1440
+2025-03-23 18:32:56,691 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:32:56,691 - INFO - Log file: mouse_server.log
+2025-03-23 18:32:56,741 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:33:16,309 - INFO - connection open
+2025-03-23 18:33:16,309 - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\iyoua\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\websockets\asyncio\server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: handle_mouse_control() missing 1 required positional argument: 'path'
+2025-03-23 18:37:53,505 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:37:53,505 - INFO - Screen size: 2560x1440
+2025-03-23 18:37:53,505 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:37:53,506 - INFO - Log file: mouse_server.log
+2025-03-23 18:37:53,562 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:38:37,744 - INFO - connection open
+2025-03-23 18:38:37,744 - INFO - Client connected from 127.0.0.1
+2025-03-23 18:38:37,745 - INFO - Screen dimensions: 2560x1440
+2025-03-23 18:39:12,480 - INFO - Client 127.0.0.1 disconnected after 0:00:34.735592
+2025-03-23 18:39:12,481 - INFO - Session summary - Moves: 0, Clicks: 0, Right clicks: 0, Double clicks: 0, Scrolls: 0
+2025-03-23 18:42:21,610 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:42:21,610 - INFO - Screen size: 2560x1440
+2025-03-23 18:42:21,610 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:42:21,610 - INFO - Log file: mouse_server.log
+2025-03-23 18:42:21,659 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:42:21,659 - INFO - Server started successfully!
+2025-03-23 18:42:35,977 - INFO - connection open
+2025-03-23 18:42:35,977 - INFO - Client connected from 127.0.0.1
+2025-03-23 18:42:35,977 - INFO - Screen dimensions: 2560x1440
+2025-03-23 18:42:36,046 - INFO - Received message: {"type": "ping", "message": "Hello from client"}
+2025-03-23 18:42:36,046 - INFO - Parsed data: {
+  "type": "ping",
+  "message": "Hello from client"
+}
+2025-03-23 18:42:36,046 - INFO - Received ping message
+2025-03-23 18:42:46,502 - INFO - Received message: {"type": "move", "x": 0.5526041666666667, "y": 0.5222222222222223}
+2025-03-23 18:42:46,503 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5526041666666667,
+  "y": 0.5222222222222223
+}
+2025-03-23 18:42:46,503 - INFO - Move event - x: 0.5526041666666667, y: 0.5222222222222223
+2025-03-23 18:42:46,503 - INFO - Converting to absolute coordinates - x: 1414, y: 752
+2025-03-23 18:42:46,628 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:47,122 - INFO - Received message: {"type": "move", "x": 0.5661458333333333, "y": 0.5222222222222223}
+2025-03-23 18:42:47,123 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5661458333333333,
+  "y": 0.5222222222222223
+}
+2025-03-23 18:42:47,123 - INFO - Move event - x: 0.5661458333333333, y: 0.5222222222222223
+2025-03-23 18:42:47,123 - INFO - Converting to absolute coordinates - x: 1449, y: 752
+2025-03-23 18:42:47,227 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:47,339 - INFO - Received message: {"type": "move", "x": 0.6234375, "y": 0.5083333333333333}
+2025-03-23 18:42:47,339 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6234375,
+  "y": 0.5083333333333333
+}
+2025-03-23 18:42:47,339 - INFO - Move event - x: 0.6234375, y: 0.5083333333333333
+2025-03-23 18:42:47,339 - INFO - Converting to absolute coordinates - x: 1596, y: 732
+2025-03-23 18:42:47,443 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:47,559 - INFO - Received message: {"type": "move", "x": 0.6380208333333334, "y": 0.5027777777777778}
+2025-03-23 18:42:47,559 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6380208333333334,
+  "y": 0.5027777777777778
+}
+2025-03-23 18:42:47,560 - INFO - Move event - x: 0.6380208333333334, y: 0.5027777777777778
+2025-03-23 18:42:47,560 - INFO - Converting to absolute coordinates - x: 1633, y: 724
+2025-03-23 18:42:47,664 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:47,774 - INFO - Received message: {"type": "move", "x": 0.6208333333333333, "y": 0.487962962962963}
+2025-03-23 18:42:47,775 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6208333333333333,
+  "y": 0.487962962962963
+}
+2025-03-23 18:42:47,775 - INFO - Move event - x: 0.6208333333333333, y: 0.487962962962963
+2025-03-23 18:42:47,775 - INFO - Converting to absolute coordinates - x: 1589, y: 702
+2025-03-23 18:42:47,880 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:47,990 - INFO - Received message: {"type": "move", "x": 0.5885416666666666, "y": 0.45925925925925926}
+2025-03-23 18:42:47,990 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5885416666666666,
+  "y": 0.45925925925925926
+}
+2025-03-23 18:42:47,991 - INFO - Move event - x: 0.5885416666666666, y: 0.45925925925925926
+2025-03-23 18:42:47,991 - INFO - Converting to absolute coordinates - x: 1506, y: 661
+2025-03-23 18:42:48,095 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:48,203 - INFO - Received message: {"type": "move", "x": 0.5526041666666667, "y": 0.4166666666666667}
+2025-03-23 18:42:48,203 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5526041666666667,
+  "y": 0.4166666666666667
+}
+2025-03-23 18:42:48,203 - INFO - Move event - x: 0.5526041666666667, y: 0.4166666666666667
+2025-03-23 18:42:48,203 - INFO - Converting to absolute coordinates - x: 1414, y: 600
+2025-03-23 18:42:48,307 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:48,422 - INFO - Received message: {"type": "move", "x": 0.5010416666666667, "y": 0.3972222222222222}
+2025-03-23 18:42:48,422 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5010416666666667,
+  "y": 0.3972222222222222
+}
+2025-03-23 18:42:48,423 - INFO - Move event - x: 0.5010416666666667, y: 0.3972222222222222
+2025-03-23 18:42:48,423 - INFO - Converting to absolute coordinates - x: 1282, y: 572
+2025-03-23 18:42:48,527 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:48,638 - INFO - Received message: {"type": "move", "x": 0.44166666666666665, "y": 0.3990740740740741}
+2025-03-23 18:42:48,639 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.44166666666666665,
+  "y": 0.3990740740740741
+}
+2025-03-23 18:42:48,639 - INFO - Move event - x: 0.44166666666666665, y: 0.3990740740740741
+2025-03-23 18:42:48,639 - INFO - Converting to absolute coordinates - x: 1130, y: 574
+2025-03-23 18:42:48,743 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:48,861 - INFO - Received message: {"type": "move", "x": 0.4119791666666667, "y": 0.45185185185185184}
+2025-03-23 18:42:48,862 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.4119791666666667,
+  "y": 0.45185185185185184
+}
+2025-03-23 18:42:48,862 - INFO - Move event - x: 0.4119791666666667, y: 0.45185185185185184
+2025-03-23 18:42:48,862 - INFO - Converting to absolute coordinates - x: 1054, y: 650
+2025-03-23 18:42:48,967 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:49,086 - INFO - Received message: {"type": "move", "x": 0.4114583333333333, "y": 0.5462962962962963}
+2025-03-23 18:42:49,087 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.4114583333333333,
+  "y": 0.5462962962962963
+}
+2025-03-23 18:42:49,087 - INFO - Move event - x: 0.4114583333333333, y: 0.5462962962962963
+2025-03-23 18:42:49,087 - INFO - Converting to absolute coordinates - x: 1053, y: 786
+2025-03-23 18:42:49,192 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:49,302 - INFO - Received message: {"type": "move", "x": 0.453125, "y": 0.562037037037037}
+2025-03-23 18:42:49,302 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.453125,
+  "y": 0.562037037037037
+}
+2025-03-23 18:42:49,303 - INFO - Move event - x: 0.453125, y: 0.562037037037037
+2025-03-23 18:42:49,303 - INFO - Converting to absolute coordinates - x: 1160, y: 809
+2025-03-23 18:42:49,407 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:49,520 - INFO - Received message: {"type": "move", "x": 0.5, "y": 0.5055555555555555}
+2025-03-23 18:42:49,520 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5,
+  "y": 0.5055555555555555
+}
+2025-03-23 18:42:49,521 - INFO - Move event - x: 0.5, y: 0.5055555555555555
+2025-03-23 18:42:49,521 - INFO - Converting to absolute coordinates - x: 1280, y: 728
+2025-03-23 18:42:49,625 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:49,739 - INFO - Received message: {"type": "move", "x": 0.5645833333333333, "y": 0.4601851851851852}
+2025-03-23 18:42:49,739 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5645833333333333,
+  "y": 0.4601851851851852
+}
+2025-03-23 18:42:49,740 - INFO - Move event - x: 0.5645833333333333, y: 0.4601851851851852
+2025-03-23 18:42:49,740 - INFO - Converting to absolute coordinates - x: 1445, y: 662
+2025-03-23 18:42:49,844 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:49,951 - INFO - Received message: {"type": "move", "x": 0.5927083333333333, "y": 0.47962962962962963}
+2025-03-23 18:42:49,951 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5927083333333333,
+  "y": 0.47962962962962963
+}
+2025-03-23 18:42:49,952 - INFO - Move event - x: 0.5927083333333333, y: 0.47962962962962963
+2025-03-23 18:42:49,952 - INFO - Converting to absolute coordinates - x: 1517, y: 690
+2025-03-23 18:42:50,056 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:50,166 - INFO - Received message: {"type": "move", "x": 0.5802083333333333, "y": 0.5731481481481482}
+2025-03-23 18:42:50,167 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5802083333333333,
+  "y": 0.5731481481481482
+}
+2025-03-23 18:42:50,167 - INFO - Move event - x: 0.5802083333333333, y: 0.5731481481481482
+2025-03-23 18:42:50,167 - INFO - Converting to absolute coordinates - x: 1485, y: 825
+2025-03-23 18:42:50,272 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:50,382 - INFO - Received message: {"type": "move", "x": 0.5885416666666666, "y": 0.6055555555555555}
+2025-03-23 18:42:50,383 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5885416666666666,
+  "y": 0.6055555555555555
+}
+2025-03-23 18:42:50,383 - INFO - Move event - x: 0.5885416666666666, y: 0.6055555555555555
+2025-03-23 18:42:50,383 - INFO - Converting to absolute coordinates - x: 1506, y: 871
+2025-03-23 18:42:50,488 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:50,611 - INFO - Received message: {"type": "move", "x": 0.6703125, "y": 0.5277777777777778}
+2025-03-23 18:42:50,611 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6703125,
+  "y": 0.5277777777777778
+}
+2025-03-23 18:42:50,611 - INFO - Move event - x: 0.6703125, y: 0.5277777777777778
+2025-03-23 18:42:50,611 - INFO - Converting to absolute coordinates - x: 1716, y: 760
+2025-03-23 18:42:50,715 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:50,843 - INFO - Received message: {"type": "move", "x": 0.725, "y": 0.5166666666666667}
+2025-03-23 18:42:50,844 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.725,
+  "y": 0.5166666666666667
+}
+2025-03-23 18:42:50,844 - INFO - Move event - x: 0.725, y: 0.5166666666666667
+2025-03-23 18:42:50,844 - INFO - Converting to absolute coordinates - x: 1856, y: 744
+2025-03-23 18:42:50,948 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:51,070 - INFO - Received message: {"type": "move", "x": 0.7005208333333334, "y": 0.5888888888888889}
+2025-03-23 18:42:51,071 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7005208333333334,
+  "y": 0.5888888888888889
+}
+2025-03-23 18:42:51,071 - INFO - Move event - x: 0.7005208333333334, y: 0.5888888888888889
+2025-03-23 18:42:51,071 - INFO - Converting to absolute coordinates - x: 1793, y: 848
+2025-03-23 18:42:51,176 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:51,279 - INFO - Received message: {"type": "move", "x": 0.6572916666666667, "y": 0.6537037037037037}
+2025-03-23 18:42:51,279 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6572916666666667,
+  "y": 0.6537037037037037
+}
+2025-03-23 18:42:51,279 - INFO - Move event - x: 0.6572916666666667, y: 0.6537037037037037
+2025-03-23 18:42:51,279 - INFO - Converting to absolute coordinates - x: 1682, y: 941
+2025-03-23 18:42:51,383 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:51,498 - INFO - Received message: {"type": "move", "x": 0.6583333333333333, "y": 0.687037037037037}
+2025-03-23 18:42:51,499 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6583333333333333,
+  "y": 0.687037037037037
+}
+2025-03-23 18:42:51,499 - INFO - Move event - x: 0.6583333333333333, y: 0.687037037037037
+2025-03-23 18:42:51,499 - INFO - Converting to absolute coordinates - x: 1685, y: 989
+2025-03-23 18:42:51,604 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:51,715 - INFO - Received message: {"type": "move", "x": 0.6979166666666666, "y": 0.6574074074074074}
+2025-03-23 18:42:51,715 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6979166666666666,
+  "y": 0.6574074074074074
+}
+2025-03-23 18:42:51,715 - INFO - Move event - x: 0.6979166666666666, y: 0.6574074074074074
+2025-03-23 18:42:51,715 - INFO - Converting to absolute coordinates - x: 1786, y: 946
+2025-03-23 18:42:51,820 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:51,936 - INFO - Received message: {"type": "move", "x": 0.7328125, "y": 0.5259259259259259}
+2025-03-23 18:42:51,937 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7328125,
+  "y": 0.5259259259259259
+}
+2025-03-23 18:42:51,937 - INFO - Move event - x: 0.7328125, y: 0.5259259259259259
+2025-03-23 18:42:51,937 - INFO - Converting to absolute coordinates - x: 1876, y: 757
+2025-03-23 18:42:52,041 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:52,147 - INFO - Received message: {"type": "move", "x": 0.7359375, "y": 0.462037037037037}
+2025-03-23 18:42:52,147 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7359375,
+  "y": 0.462037037037037
+}
+2025-03-23 18:42:52,147 - INFO - Move event - x: 0.7359375, y: 0.462037037037037
+2025-03-23 18:42:52,147 - INFO - Converting to absolute coordinates - x: 1884, y: 665
+2025-03-23 18:42:52,252 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:52,367 - INFO - Received message: {"type": "move", "x": 0.7302083333333333, "y": 0.4074074074074074}
+2025-03-23 18:42:52,367 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7302083333333333,
+  "y": 0.4074074074074074
+}
+2025-03-23 18:42:52,367 - INFO - Move event - x: 0.7302083333333333, y: 0.4074074074074074
+2025-03-23 18:42:52,367 - INFO - Converting to absolute coordinates - x: 1869, y: 586
+2025-03-23 18:42:52,472 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:52,582 - INFO - Received message: {"type": "move", "x": 0.684375, "y": 0.29814814814814816}
+2025-03-23 18:42:52,583 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.684375,
+  "y": 0.29814814814814816
+}
+2025-03-23 18:42:52,583 - INFO - Move event - x: 0.684375, y: 0.29814814814814816
+2025-03-23 18:42:52,583 - INFO - Converting to absolute coordinates - x: 1752, y: 429
+2025-03-23 18:42:52,688 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:52,795 - INFO - Received message: {"type": "move", "x": 0.5927083333333333, "y": 0.25}
+2025-03-23 18:42:52,795 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5927083333333333,
+  "y": 0.25
+}
+2025-03-23 18:42:52,795 - INFO - Move event - x: 0.5927083333333333, y: 0.25
+2025-03-23 18:42:52,795 - INFO - Converting to absolute coordinates - x: 1517, y: 360
+2025-03-23 18:42:52,900 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:53,007 - INFO - Received message: {"type": "move", "x": 0.5239583333333333, "y": 0.2601851851851852}
+2025-03-23 18:42:53,008 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5239583333333333,
+  "y": 0.2601851851851852
+}
+2025-03-23 18:42:53,008 - INFO - Move event - x: 0.5239583333333333, y: 0.2601851851851852
+2025-03-23 18:42:53,008 - INFO - Converting to absolute coordinates - x: 1341, y: 374
+2025-03-23 18:42:53,112 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:53,223 - INFO - Received message: {"type": "move", "x": 0.47760416666666666, "y": 0.2962962962962963}
+2025-03-23 18:42:53,224 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.47760416666666666,
+  "y": 0.2962962962962963
+}
+2025-03-23 18:42:53,224 - INFO - Move event - x: 0.47760416666666666, y: 0.2962962962962963
+2025-03-23 18:42:53,224 - INFO - Converting to absolute coordinates - x: 1222, y: 426
+2025-03-23 18:42:53,328 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:53,440 - INFO - Received message: {"type": "move", "x": 0.4510416666666667, "y": 0.3425925925925926}
+2025-03-23 18:42:53,440 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.4510416666666667,
+  "y": 0.3425925925925926
+}
+2025-03-23 18:42:53,440 - INFO - Move event - x: 0.4510416666666667, y: 0.3425925925925926
+2025-03-23 18:42:53,440 - INFO - Converting to absolute coordinates - x: 1154, y: 493
+2025-03-23 18:42:53,544 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:53,651 - INFO - Received message: {"type": "move", "x": 0.43854166666666666, "y": 0.3972222222222222}
+2025-03-23 18:42:53,651 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.43854166666666666,
+  "y": 0.3972222222222222
+}
+2025-03-23 18:42:53,651 - INFO - Move event - x: 0.43854166666666666, y: 0.3972222222222222
+2025-03-23 18:42:53,651 - INFO - Converting to absolute coordinates - x: 1122, y: 572
+2025-03-23 18:42:53,756 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:53,883 - INFO - Received message: {"type": "move", "x": 0.43802083333333336, "y": 0.45555555555555555}
+2025-03-23 18:42:53,883 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.43802083333333336,
+  "y": 0.45555555555555555
+}
+2025-03-23 18:42:53,883 - INFO - Move event - x: 0.43802083333333336, y: 0.45555555555555555
+2025-03-23 18:42:53,883 - INFO - Converting to absolute coordinates - x: 1121, y: 656
+2025-03-23 18:42:53,988 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:54,103 - INFO - Received message: {"type": "move", "x": 0.4473958333333333, "y": 0.4787037037037037}
+2025-03-23 18:42:54,103 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.4473958333333333,
+  "y": 0.4787037037037037
+}
+2025-03-23 18:42:54,104 - INFO - Move event - x: 0.4473958333333333, y: 0.4787037037037037
+2025-03-23 18:42:54,104 - INFO - Converting to absolute coordinates - x: 1145, y: 689
+2025-03-23 18:42:54,208 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:54,324 - INFO - Received message: {"type": "move", "x": 0.48020833333333335, "y": 0.4842592592592593}
+2025-03-23 18:42:54,324 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.48020833333333335,
+  "y": 0.4842592592592593
+}
+2025-03-23 18:42:54,325 - INFO - Move event - x: 0.48020833333333335, y: 0.4842592592592593
+2025-03-23 18:42:54,325 - INFO - Converting to absolute coordinates - x: 1229, y: 697
+2025-03-23 18:42:54,429 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:54,543 - INFO - Received message: {"type": "move", "x": 0.5067708333333333, "y": 0.45185185185185184}
+2025-03-23 18:42:54,543 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5067708333333333,
+  "y": 0.45185185185185184
+}
+2025-03-23 18:42:54,544 - INFO - Move event - x: 0.5067708333333333, y: 0.45185185185185184
+2025-03-23 18:42:54,544 - INFO - Converting to absolute coordinates - x: 1297, y: 650
+2025-03-23 18:42:54,648 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:54,759 - INFO - Received message: {"type": "move", "x": 0.5505208333333333, "y": 0.4166666666666667}
+2025-03-23 18:42:54,759 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5505208333333333,
+  "y": 0.4166666666666667
+}
+2025-03-23 18:42:54,759 - INFO - Move event - x: 0.5505208333333333, y: 0.4166666666666667
+2025-03-23 18:42:54,759 - INFO - Converting to absolute coordinates - x: 1409, y: 600
+2025-03-23 18:42:54,863 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:54,975 - INFO - Received message: {"type": "move", "x": 0.5703125, "y": 0.42685185185185187}
+2025-03-23 18:42:54,975 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5703125,
+  "y": 0.42685185185185187
+}
+2025-03-23 18:42:54,975 - INFO - Move event - x: 0.5703125, y: 0.42685185185185187
+2025-03-23 18:42:54,975 - INFO - Converting to absolute coordinates - x: 1460, y: 614
+2025-03-23 18:42:55,080 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:55,192 - INFO - Received message: {"type": "move", "x": 0.5703125, "y": 0.4703703703703704}
+2025-03-23 18:42:55,192 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5703125,
+  "y": 0.4703703703703704
+}
+2025-03-23 18:42:55,192 - INFO - Move event - x: 0.5703125, y: 0.4703703703703704
+2025-03-23 18:42:55,192 - INFO - Converting to absolute coordinates - x: 1460, y: 677
+2025-03-23 18:42:55,297 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:55,425 - INFO - Received message: {"type": "move", "x": 0.5588541666666667, "y": 0.5194444444444445}
+2025-03-23 18:42:55,426 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5588541666666667,
+  "y": 0.5194444444444445
+}
+2025-03-23 18:42:55,426 - INFO - Move event - x: 0.5588541666666667, y: 0.5194444444444445
+2025-03-23 18:42:55,426 - INFO - Converting to absolute coordinates - x: 1430, y: 748
+2025-03-23 18:42:55,530 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:55,643 - INFO - Received message: {"type": "move", "x": 0.5583333333333333, "y": 0.5472222222222223}
+2025-03-23 18:42:55,643 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5583333333333333,
+  "y": 0.5472222222222223
+}
+2025-03-23 18:42:55,643 - INFO - Move event - x: 0.5583333333333333, y: 0.5472222222222223
+2025-03-23 18:42:55,644 - INFO - Converting to absolute coordinates - x: 1429, y: 788
+2025-03-23 18:42:55,748 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:55,859 - INFO - Received message: {"type": "move", "x": 0.5583333333333333, "y": 0.5703703703703704}
+2025-03-23 18:42:55,860 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5583333333333333,
+  "y": 0.5703703703703704
+}
+2025-03-23 18:42:55,860 - INFO - Move event - x: 0.5583333333333333, y: 0.5703703703703704
+2025-03-23 18:42:55,860 - INFO - Converting to absolute coordinates - x: 1429, y: 821
+2025-03-23 18:42:55,964 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:56,101 - INFO - Received message: {"type": "move", "x": 0.5583333333333333, "y": 0.5861111111111111}
+2025-03-23 18:42:56,102 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5583333333333333,
+  "y": 0.5861111111111111
+}
+2025-03-23 18:42:56,102 - INFO - Move event - x: 0.5583333333333333, y: 0.5861111111111111
+2025-03-23 18:42:56,102 - INFO - Converting to absolute coordinates - x: 1429, y: 844
+2025-03-23 18:42:56,207 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:56,331 - INFO - Received message: {"type": "move", "x": 0.5583333333333333, "y": 0.6064814814814815}
+2025-03-23 18:42:56,332 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5583333333333333,
+  "y": 0.6064814814814815
+}
+2025-03-23 18:42:56,332 - INFO - Move event - x: 0.5583333333333333, y: 0.6064814814814815
+2025-03-23 18:42:56,332 - INFO - Converting to absolute coordinates - x: 1429, y: 873
+2025-03-23 18:42:56,436 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:56,555 - INFO - Received message: {"type": "move", "x": 0.5598958333333334, "y": 0.625}
+2025-03-23 18:42:56,556 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5598958333333334,
+  "y": 0.625
+}
+2025-03-23 18:42:56,556 - INFO - Move event - x: 0.5598958333333334, y: 0.625
+2025-03-23 18:42:56,556 - INFO - Converting to absolute coordinates - x: 1433, y: 900
+2025-03-23 18:42:56,660 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:56,767 - INFO - Received message: {"type": "move", "x": 0.5765625, "y": 0.6370370370370371}
+2025-03-23 18:42:56,767 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5765625,
+  "y": 0.6370370370370371
+}
+2025-03-23 18:42:56,768 - INFO - Move event - x: 0.5765625, y: 0.6370370370370371
+2025-03-23 18:42:56,768 - INFO - Converting to absolute coordinates - x: 1476, y: 917
+2025-03-23 18:42:56,872 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:56,980 - INFO - Received message: {"type": "move", "x": 0.590625, "y": 0.6416666666666667}
+2025-03-23 18:42:56,981 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.590625,
+  "y": 0.6416666666666667
+}
+2025-03-23 18:42:56,981 - INFO - Move event - x: 0.590625, y: 0.6416666666666667
+2025-03-23 18:42:56,981 - INFO - Converting to absolute coordinates - x: 1512, y: 924
+2025-03-23 18:42:57,085 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:57,187 - INFO - Received message: {"type": "move", "x": 0.6020833333333333, "y": 0.637962962962963}
+2025-03-23 18:42:57,188 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6020833333333333,
+  "y": 0.637962962962963
+}
+2025-03-23 18:42:57,188 - INFO - Move event - x: 0.6020833333333333, y: 0.637962962962963
+2025-03-23 18:42:57,188 - INFO - Converting to absolute coordinates - x: 1541, y: 918
+2025-03-23 18:42:57,293 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:57,823 - INFO - Received message: {"type": "move", "x": 0.6109375, "y": 0.637962962962963}
+2025-03-23 18:42:57,823 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6109375,
+  "y": 0.637962962962963
+}
+2025-03-23 18:42:57,824 - INFO - Move event - x: 0.6109375, y: 0.637962962962963
+2025-03-23 18:42:57,824 - INFO - Converting to absolute coordinates - x: 1564, y: 918
+2025-03-23 18:42:57,928 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:58,041 - INFO - Received message: {"type": "move", "x": 0.6276041666666666, "y": 0.637962962962963}
+2025-03-23 18:42:58,041 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6276041666666666,
+  "y": 0.637962962962963
+}
+2025-03-23 18:42:58,041 - INFO - Move event - x: 0.6276041666666666, y: 0.637962962962963
+2025-03-23 18:42:58,042 - INFO - Converting to absolute coordinates - x: 1606, y: 918
+2025-03-23 18:42:58,146 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:58,256 - INFO - Received message: {"type": "move", "x": 0.6328125, "y": 0.6342592592592593}
+2025-03-23 18:42:58,256 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6328125,
+  "y": 0.6342592592592593
+}
+2025-03-23 18:42:58,256 - INFO - Move event - x: 0.6328125, y: 0.6342592592592593
+2025-03-23 18:42:58,256 - INFO - Converting to absolute coordinates - x: 1620, y: 913
+2025-03-23 18:42:58,360 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:58,467 - INFO - Received message: {"type": "move", "x": 0.6427083333333333, "y": 0.6231481481481481}
+2025-03-23 18:42:58,468 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6427083333333333,
+  "y": 0.6231481481481481
+}
+2025-03-23 18:42:58,468 - INFO - Move event - x: 0.6427083333333333, y: 0.6231481481481481
+2025-03-23 18:42:58,468 - INFO - Converting to absolute coordinates - x: 1645, y: 897
+2025-03-23 18:42:58,572 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:58,680 - INFO - Received message: {"type": "move", "x": 0.6567708333333333, "y": 0.6055555555555555}
+2025-03-23 18:42:58,680 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6567708333333333,
+  "y": 0.6055555555555555
+}
+2025-03-23 18:42:58,680 - INFO - Move event - x: 0.6567708333333333, y: 0.6055555555555555
+2025-03-23 18:42:58,680 - INFO - Converting to absolute coordinates - x: 1681, y: 871
+2025-03-23 18:42:58,784 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:58,893 - INFO - Received message: {"type": "move", "x": 0.6838541666666667, "y": 0.5703703703703704}
+2025-03-23 18:42:58,893 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6838541666666667,
+  "y": 0.5703703703703704
+}
+2025-03-23 18:42:58,893 - INFO - Move event - x: 0.6838541666666667, y: 0.5703703703703704
+2025-03-23 18:42:58,893 - INFO - Converting to absolute coordinates - x: 1750, y: 821
+2025-03-23 18:42:58,997 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:59,116 - INFO - Received message: {"type": "move", "x": 0.7072916666666667, "y": 0.537962962962963}
+2025-03-23 18:42:59,117 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7072916666666667,
+  "y": 0.537962962962963
+}
+2025-03-23 18:42:59,117 - INFO - Move event - x: 0.7072916666666667, y: 0.537962962962963
+2025-03-23 18:42:59,117 - INFO - Converting to absolute coordinates - x: 1810, y: 774
+2025-03-23 18:42:59,222 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:59,339 - INFO - Received message: {"type": "move", "x": 0.7421875, "y": 0.4861111111111111}
+2025-03-23 18:42:59,340 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7421875,
+  "y": 0.4861111111111111
+}
+2025-03-23 18:42:59,340 - INFO - Move event - x: 0.7421875, y: 0.4861111111111111
+2025-03-23 18:42:59,340 - INFO - Converting to absolute coordinates - x: 1900, y: 700
+2025-03-23 18:42:59,445 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:59,744 - INFO - Received message: {"type": "move", "x": 0.7447916666666666, "y": 0.4740740740740741}
+2025-03-23 18:42:59,744 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7447916666666666,
+  "y": 0.4740740740740741
+}
+2025-03-23 18:42:59,745 - INFO - Move event - x: 0.7447916666666666, y: 0.4740740740740741
+2025-03-23 18:42:59,745 - INFO - Converting to absolute coordinates - x: 1906, y: 682
+2025-03-23 18:42:59,849 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:42:59,953 - INFO - Received message: {"type": "move", "x": 0.753125, "y": 0.4074074074074074}
+2025-03-23 18:42:59,953 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.753125,
+  "y": 0.4074074074074074
+}
+2025-03-23 18:42:59,953 - INFO - Move event - x: 0.753125, y: 0.4074074074074074
+2025-03-23 18:42:59,953 - INFO - Converting to absolute coordinates - x: 1928, y: 586
+2025-03-23 18:43:00,058 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:00,175 - INFO - Received message: {"type": "move", "x": 0.7546875, "y": 0.3861111111111111}
+2025-03-23 18:43:00,176 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7546875,
+  "y": 0.3861111111111111
+}
+2025-03-23 18:43:00,176 - INFO - Move event - x: 0.7546875, y: 0.3861111111111111
+2025-03-23 18:43:00,176 - INFO - Converting to absolute coordinates - x: 1932, y: 556
+2025-03-23 18:43:00,280 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:00,399 - INFO - Received message: {"type": "move", "x": 0.7552083333333334, "y": 0.362962962962963}
+2025-03-23 18:43:00,399 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7552083333333334,
+  "y": 0.362962962962963
+}
+2025-03-23 18:43:00,400 - INFO - Move event - x: 0.7552083333333334, y: 0.362962962962963
+2025-03-23 18:43:00,400 - INFO - Converting to absolute coordinates - x: 1933, y: 522
+2025-03-23 18:43:00,503 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:00,628 - INFO - Received message: {"type": "move", "x": 0.7479166666666667, "y": 0.35648148148148145}
+2025-03-23 18:43:00,628 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7479166666666667,
+  "y": 0.35648148148148145
+}
+2025-03-23 18:43:00,629 - INFO - Move event - x: 0.7479166666666667, y: 0.35648148148148145
+2025-03-23 18:43:00,629 - INFO - Converting to absolute coordinates - x: 1914, y: 513
+2025-03-23 18:43:00,733 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:00,844 - INFO - Received message: {"type": "move", "x": 0.7375, "y": 0.35648148148148145}
+2025-03-23 18:43:00,845 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7375,
+  "y": 0.35648148148148145
+}
+2025-03-23 18:43:00,845 - INFO - Move event - x: 0.7375, y: 0.35648148148148145
+2025-03-23 18:43:00,845 - INFO - Converting to absolute coordinates - x: 1888, y: 513
+2025-03-23 18:43:00,949 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:01,064 - INFO - Received message: {"type": "move", "x": 0.7255208333333333, "y": 0.3731481481481482}
+2025-03-23 18:43:01,064 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7255208333333333,
+  "y": 0.3731481481481482
+}
+2025-03-23 18:43:01,064 - INFO - Move event - x: 0.7255208333333333, y: 0.3731481481481482
+2025-03-23 18:43:01,064 - INFO - Converting to absolute coordinates - x: 1857, y: 537
+2025-03-23 18:43:01,169 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:01,279 - INFO - Received message: {"type": "move", "x": 0.7166666666666667, "y": 0.4083333333333333}
+2025-03-23 18:43:01,280 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7166666666666667,
+  "y": 0.4083333333333333
+}
+2025-03-23 18:43:01,280 - INFO - Move event - x: 0.7166666666666667, y: 0.4083333333333333
+2025-03-23 18:43:01,280 - INFO - Converting to absolute coordinates - x: 1834, y: 588
+2025-03-23 18:43:01,384 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:01,530 - INFO - Received message: {"type": "move", "x": 0.7208333333333333, "y": 0.43425925925925923}
+2025-03-23 18:43:01,530 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7208333333333333,
+  "y": 0.43425925925925923
+}
+2025-03-23 18:43:01,530 - INFO - Move event - x: 0.7208333333333333, y: 0.43425925925925923
+2025-03-23 18:43:01,530 - INFO - Converting to absolute coordinates - x: 1845, y: 625
+2025-03-23 18:43:01,635 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:01,751 - INFO - Received message: {"type": "move", "x": 0.7505208333333333, "y": 0.4444444444444444}
+2025-03-23 18:43:01,752 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7505208333333333,
+  "y": 0.4444444444444444
+}
+2025-03-23 18:43:01,752 - INFO - Move event - x: 0.7505208333333333, y: 0.4444444444444444
+2025-03-23 18:43:01,752 - INFO - Converting to absolute coordinates - x: 1921, y: 640
+2025-03-23 18:43:01,856 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:01,976 - INFO - Received message: {"type": "move", "x": 0.7614583333333333, "y": 0.46944444444444444}
+2025-03-23 18:43:01,976 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7614583333333333,
+  "y": 0.46944444444444444
+}
+2025-03-23 18:43:01,976 - INFO - Move event - x: 0.7614583333333333, y: 0.46944444444444444
+2025-03-23 18:43:01,976 - INFO - Converting to absolute coordinates - x: 1949, y: 676
+2025-03-23 18:43:02,081 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:02,191 - INFO - Received message: {"type": "move", "x": 0.7567708333333333, "y": 0.512962962962963}
+2025-03-23 18:43:02,192 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7567708333333333,
+  "y": 0.512962962962963
+}
+2025-03-23 18:43:02,192 - INFO - Move event - x: 0.7567708333333333, y: 0.512962962962963
+2025-03-23 18:43:02,192 - INFO - Converting to absolute coordinates - x: 1937, y: 738
+2025-03-23 18:43:02,296 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:02,404 - INFO - Received message: {"type": "move", "x": 0.7447916666666666, "y": 0.5472222222222223}
+2025-03-23 18:43:02,404 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7447916666666666,
+  "y": 0.5472222222222223
+}
+2025-03-23 18:43:02,404 - INFO - Move event - x: 0.7447916666666666, y: 0.5472222222222223
+2025-03-23 18:43:02,405 - INFO - Converting to absolute coordinates - x: 1906, y: 788
+2025-03-23 18:43:02,509 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:02,625 - INFO - Received message: {"type": "move", "x": 0.7416666666666667, "y": 0.575}
+2025-03-23 18:43:02,626 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7416666666666667,
+  "y": 0.575
+}
+2025-03-23 18:43:02,626 - INFO - Move event - x: 0.7416666666666667, y: 0.575
+2025-03-23 18:43:02,626 - INFO - Converting to absolute coordinates - x: 1898, y: 827
+2025-03-23 18:43:02,730 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:02,844 - INFO - Received message: {"type": "move", "x": 0.740625, "y": 0.5824074074074074}
+2025-03-23 18:43:02,844 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.740625,
+  "y": 0.5824074074074074
+}
+2025-03-23 18:43:02,844 - INFO - Move event - x: 0.740625, y: 0.5824074074074074
+2025-03-23 18:43:02,845 - INFO - Converting to absolute coordinates - x: 1896, y: 838
+2025-03-23 18:43:02,949 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:03,208 - INFO - Received message: {"type": "move", "x": 0.740625, "y": 0.6018518518518519}
+2025-03-23 18:43:03,208 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.740625,
+  "y": 0.6018518518518519
+}
+2025-03-23 18:43:03,208 - INFO - Move event - x: 0.740625, y: 0.6018518518518519
+2025-03-23 18:43:03,208 - INFO - Converting to absolute coordinates - x: 1896, y: 866
+2025-03-23 18:43:03,313 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:03,420 - INFO - Received message: {"type": "move", "x": 0.7520833333333333, "y": 0.6796296296296296}
+2025-03-23 18:43:03,420 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7520833333333333,
+  "y": 0.6796296296296296
+}
+2025-03-23 18:43:03,420 - INFO - Move event - x: 0.7520833333333333, y: 0.6796296296296296
+2025-03-23 18:43:03,420 - INFO - Converting to absolute coordinates - x: 1925, y: 978
+2025-03-23 18:43:03,525 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:03,632 - INFO - Received message: {"type": "move", "x": 0.753125, "y": 0.7490740740740741}
+2025-03-23 18:43:03,633 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.753125,
+  "y": 0.7490740740740741
+}
+2025-03-23 18:43:03,633 - INFO - Move event - x: 0.753125, y: 0.7490740740740741
+2025-03-23 18:43:03,633 - INFO - Converting to absolute coordinates - x: 1928, y: 1078
+2025-03-23 18:43:03,737 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:03,849 - INFO - Received message: {"type": "move", "x": 0.703125, "y": 0.8231481481481482}
+2025-03-23 18:43:03,849 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.703125,
+  "y": 0.8231481481481482
+}
+2025-03-23 18:43:03,849 - INFO - Move event - x: 0.703125, y: 0.8231481481481482
+2025-03-23 18:43:03,849 - INFO - Converting to absolute coordinates - x: 1800, y: 1185
+2025-03-23 18:43:03,953 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:04,069 - INFO - Received message: {"type": "move", "x": 0.6416666666666667, "y": 0.7657407407407407}
+2025-03-23 18:43:04,069 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6416666666666667,
+  "y": 0.7657407407407407
+}
+2025-03-23 18:43:04,069 - INFO - Move event - x: 0.6416666666666667, y: 0.7657407407407407
+2025-03-23 18:43:04,069 - INFO - Converting to absolute coordinates - x: 1642, y: 1102
+2025-03-23 18:43:04,173 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:04,476 - INFO - Received message: {"type": "move", "x": 0.6380208333333334, "y": 0.7657407407407407}
+2025-03-23 18:43:04,476 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6380208333333334,
+  "y": 0.7657407407407407
+}
+2025-03-23 18:43:04,476 - INFO - Move event - x: 0.6380208333333334, y: 0.7657407407407407
+2025-03-23 18:43:04,477 - INFO - Converting to absolute coordinates - x: 1633, y: 1102
+2025-03-23 18:43:04,581 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:04,696 - INFO - Received message: {"type": "move", "x": 0.5104166666666666, "y": 0.7435185185185185}
+2025-03-23 18:43:04,696 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5104166666666666,
+  "y": 0.7435185185185185
+}
+2025-03-23 18:43:04,696 - INFO - Move event - x: 0.5104166666666666, y: 0.7435185185185185
+2025-03-23 18:43:04,697 - INFO - Converting to absolute coordinates - x: 1306, y: 1070
+2025-03-23 18:43:04,801 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:04,916 - INFO - Received message: {"type": "move", "x": 0.4296875, "y": 0.6916666666666667}
+2025-03-23 18:43:04,916 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.4296875,
+  "y": 0.6916666666666667
+}
+2025-03-23 18:43:04,916 - INFO - Move event - x: 0.4296875, y: 0.6916666666666667
+2025-03-23 18:43:04,916 - INFO - Converting to absolute coordinates - x: 1100, y: 996
+2025-03-23 18:43:05,021 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:05,125 - INFO - Received message: {"type": "move", "x": 0.3828125, "y": 0.5537037037037037}
+2025-03-23 18:43:05,126 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.3828125,
+  "y": 0.5537037037037037
+}
+2025-03-23 18:43:05,126 - INFO - Move event - x: 0.3828125, y: 0.5537037037037037
+2025-03-23 18:43:05,126 - INFO - Converting to absolute coordinates - x: 980, y: 797
+2025-03-23 18:43:05,230 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:05,664 - INFO - Received message: {"type": "move", "x": 0.38177083333333334, "y": 0.5518518518518518}
+2025-03-23 18:43:05,664 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.38177083333333334,
+  "y": 0.5518518518518518
+}
+2025-03-23 18:43:05,665 - INFO - Move event - x: 0.38177083333333334, y: 0.5518518518518518
+2025-03-23 18:43:05,665 - INFO - Converting to absolute coordinates - x: 977, y: 794
+2025-03-23 18:43:05,769 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:05,888 - INFO - Received message: {"type": "move", "x": 0.34791666666666665, "y": 0.4861111111111111}
+2025-03-23 18:43:05,888 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.34791666666666665,
+  "y": 0.4861111111111111
+}
+2025-03-23 18:43:05,889 - INFO - Move event - x: 0.34791666666666665, y: 0.4861111111111111
+2025-03-23 18:43:05,889 - INFO - Converting to absolute coordinates - x: 890, y: 700
+2025-03-23 18:43:05,993 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:06,104 - INFO - Received message: {"type": "move", "x": 0.328125, "y": 0.45092592592592595}
+2025-03-23 18:43:06,104 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.328125,
+  "y": 0.45092592592592595
+}
+2025-03-23 18:43:06,105 - INFO - Move event - x: 0.328125, y: 0.45092592592592595
+2025-03-23 18:43:06,105 - INFO - Converting to absolute coordinates - x: 840, y: 649
+2025-03-23 18:43:06,209 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:06,324 - INFO - Received message: {"type": "move", "x": 0.30364583333333334, "y": 0.4638888888888889}
+2025-03-23 18:43:06,324 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.30364583333333334,
+  "y": 0.4638888888888889
+}
+2025-03-23 18:43:06,324 - INFO - Move event - x: 0.30364583333333334, y: 0.4638888888888889
+2025-03-23 18:43:06,324 - INFO - Converting to absolute coordinates - x: 777, y: 668
+2025-03-23 18:43:06,429 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:06,736 - INFO - Received message: {"type": "move", "x": 0.28489583333333335, "y": 0.47129629629629627}
+2025-03-23 18:43:06,737 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.28489583333333335,
+  "y": 0.47129629629629627
+}
+2025-03-23 18:43:06,737 - INFO - Move event - x: 0.28489583333333335, y: 0.47129629629629627
+2025-03-23 18:43:06,737 - INFO - Converting to absolute coordinates - x: 729, y: 678
+2025-03-23 18:43:06,841 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:06,948 - INFO - Received message: {"type": "move", "x": 0.25104166666666666, "y": 0.5009259259259259}
+2025-03-23 18:43:06,948 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.25104166666666666,
+  "y": 0.5009259259259259
+}
+2025-03-23 18:43:06,949 - INFO - Move event - x: 0.25104166666666666, y: 0.5009259259259259
+2025-03-23 18:43:06,949 - INFO - Converting to absolute coordinates - x: 642, y: 721
+2025-03-23 18:43:07,053 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:07,160 - INFO - Received message: {"type": "move", "x": 0.24947916666666667, "y": 0.5212962962962963}
+2025-03-23 18:43:07,161 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.24947916666666667,
+  "y": 0.5212962962962963
+}
+2025-03-23 18:43:07,161 - INFO - Move event - x: 0.24947916666666667, y: 0.5212962962962963
+2025-03-23 18:43:07,161 - INFO - Converting to absolute coordinates - x: 638, y: 750
+2025-03-23 18:43:07,265 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:07,376 - INFO - Received message: {"type": "move", "x": 0.25677083333333334, "y": 0.5472222222222223}
+2025-03-23 18:43:07,376 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.25677083333333334,
+  "y": 0.5472222222222223
+}
+2025-03-23 18:43:07,377 - INFO - Move event - x: 0.25677083333333334, y: 0.5472222222222223
+2025-03-23 18:43:07,377 - INFO - Converting to absolute coordinates - x: 657, y: 788
+2025-03-23 18:43:07,481 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:07,589 - INFO - Received message: {"type": "move", "x": 0.2609375, "y": 0.5537037037037037}
+2025-03-23 18:43:07,589 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.2609375,
+  "y": 0.5537037037037037
+}
+2025-03-23 18:43:07,590 - INFO - Move event - x: 0.2609375, y: 0.5537037037037037
+2025-03-23 18:43:07,590 - INFO - Converting to absolute coordinates - x: 668, y: 797
+2025-03-23 18:43:07,693 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:07,807 - INFO - Received message: {"type": "move", "x": 0.2682291666666667, "y": 0.5564814814814815}
+2025-03-23 18:43:07,808 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.2682291666666667,
+  "y": 0.5564814814814815
+}
+2025-03-23 18:43:07,808 - INFO - Move event - x: 0.2682291666666667, y: 0.5564814814814815
+2025-03-23 18:43:07,808 - INFO - Converting to absolute coordinates - x: 686, y: 801
+2025-03-23 18:43:07,912 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:08,024 - INFO - Received message: {"type": "move", "x": 0.3098958333333333, "y": 0.5694444444444444}
+2025-03-23 18:43:08,025 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.3098958333333333,
+  "y": 0.5694444444444444
+}
+2025-03-23 18:43:08,025 - INFO - Move event - x: 0.3098958333333333, y: 0.5694444444444444
+2025-03-23 18:43:08,025 - INFO - Converting to absolute coordinates - x: 793, y: 820
+2025-03-23 18:43:08,130 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:08,240 - INFO - Received message: {"type": "move", "x": 0.3182291666666667, "y": 0.5712962962962963}
+2025-03-23 18:43:08,240 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.3182291666666667,
+  "y": 0.5712962962962963
+}
+2025-03-23 18:43:08,240 - INFO - Move event - x: 0.3182291666666667, y: 0.5712962962962963
+2025-03-23 18:43:08,241 - INFO - Converting to absolute coordinates - x: 814, y: 822
+2025-03-23 18:43:08,345 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:08,456 - INFO - Received message: {"type": "move", "x": 0.6505208333333333, "y": 0.3453703703703704}
+2025-03-23 18:43:08,456 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6505208333333333,
+  "y": 0.3453703703703704
+}
+2025-03-23 18:43:08,457 - INFO - Move event - x: 0.6505208333333333, y: 0.3453703703703704
+2025-03-23 18:43:08,457 - INFO - Converting to absolute coordinates - x: 1665, y: 497
+2025-03-23 18:43:08,561 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:08,676 - INFO - Received message: {"type": "move", "x": 0.7317708333333334, "y": 0.2935185185185185}
+2025-03-23 18:43:08,677 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7317708333333334,
+  "y": 0.2935185185185185
+}
+2025-03-23 18:43:08,677 - INFO - Move event - x: 0.7317708333333334, y: 0.2935185185185185
+2025-03-23 18:43:08,677 - INFO - Converting to absolute coordinates - x: 1873, y: 422
+2025-03-23 18:43:08,781 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:08,884 - INFO - Received message: {"type": "move", "x": 0.8338541666666667, "y": 0.1685185185185185}
+2025-03-23 18:43:08,885 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.8338541666666667,
+  "y": 0.1685185185185185
+}
+2025-03-23 18:43:08,885 - INFO - Move event - x: 0.8338541666666667, y: 0.1685185185185185
+2025-03-23 18:43:08,885 - INFO - Converting to absolute coordinates - x: 2134, y: 242
+2025-03-23 18:43:08,989 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:09,108 - INFO - Received message: {"type": "move", "x": 0.8947916666666667, "y": 0.06574074074074074}
+2025-03-23 18:43:09,108 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.8947916666666667,
+  "y": 0.06574074074074074
+}
+2025-03-23 18:43:09,109 - INFO - Move event - x: 0.8947916666666667, y: 0.06574074074074074
+2025-03-23 18:43:09,109 - INFO - Converting to absolute coordinates - x: 2290, y: 94
+2025-03-23 18:43:09,213 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:09,324 - INFO - Received message: {"type": "move", "x": 0.9010416666666666, "y": 0.04351851851851852}
+2025-03-23 18:43:09,325 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.9010416666666666,
+  "y": 0.04351851851851852
+}
+2025-03-23 18:43:09,325 - INFO - Move event - x: 0.9010416666666666, y: 0.04351851851851852
+2025-03-23 18:43:09,325 - INFO - Converting to absolute coordinates - x: 2306, y: 62
+2025-03-23 18:43:09,429 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:09,536 - INFO - Received message: {"type": "move", "x": 0.7973958333333333, "y": 0.20925925925925926}
+2025-03-23 18:43:09,536 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7973958333333333,
+  "y": 0.20925925925925926
+}
+2025-03-23 18:43:09,537 - INFO - Move event - x: 0.7973958333333333, y: 0.20925925925925926
+2025-03-23 18:43:09,537 - INFO - Converting to absolute coordinates - x: 2041, y: 301
+2025-03-23 18:43:09,641 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:09,756 - INFO - Received message: {"type": "move", "x": 0.7229166666666667, "y": 0.33055555555555555}
+2025-03-23 18:43:09,757 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7229166666666667,
+  "y": 0.33055555555555555
+}
+2025-03-23 18:43:09,757 - INFO - Move event - x: 0.7229166666666667, y: 0.33055555555555555
+2025-03-23 18:43:09,757 - INFO - Converting to absolute coordinates - x: 1850, y: 476
+2025-03-23 18:43:09,861 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:09,978 - INFO - Received message: {"type": "move", "x": 0.7151041666666667, "y": 0.3453703703703704}
+2025-03-23 18:43:09,978 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.7151041666666667,
+  "y": 0.3453703703703704
+}
+2025-03-23 18:43:09,979 - INFO - Move event - x: 0.7151041666666667, y: 0.3453703703703704
+2025-03-23 18:43:09,979 - INFO - Converting to absolute coordinates - x: 1830, y: 497
+2025-03-23 18:43:10,083 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:10,209 - INFO - Received message: {"type": "move", "x": 0.6223958333333334, "y": 0.4203703703703704}
+2025-03-23 18:43:10,210 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.6223958333333334,
+  "y": 0.4203703703703704
+}
+2025-03-23 18:43:10,210 - INFO - Move event - x: 0.6223958333333334, y: 0.4203703703703704
+2025-03-23 18:43:10,210 - INFO - Converting to absolute coordinates - x: 1593, y: 605
+2025-03-23 18:43:10,314 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:10,418 - INFO - Received message: {"type": "move", "x": 0.5921875, "y": 0.4351851851851852}
+2025-03-23 18:43:10,419 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5921875,
+  "y": 0.4351851851851852
+}
+2025-03-23 18:43:10,419 - INFO - Move event - x: 0.5921875, y: 0.4351851851851852
+2025-03-23 18:43:10,419 - INFO - Converting to absolute coordinates - x: 1516, y: 626
+2025-03-23 18:43:10,524 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:10,641 - INFO - Received message: {"type": "move", "x": 0.5916666666666667, "y": 0.42592592592592593}
+2025-03-23 18:43:10,641 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5916666666666667,
+  "y": 0.42592592592592593
+}
+2025-03-23 18:43:10,641 - INFO - Move event - x: 0.5916666666666667, y: 0.42592592592592593
+2025-03-23 18:43:10,641 - INFO - Converting to absolute coordinates - x: 1514, y: 613
+2025-03-23 18:43:10,746 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:10,853 - INFO - Received message: {"type": "move", "x": 0.5880208333333333, "y": 0.45555555555555555}
+2025-03-23 18:43:10,854 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5880208333333333,
+  "y": 0.45555555555555555
+}
+2025-03-23 18:43:10,854 - INFO - Move event - x: 0.5880208333333333, y: 0.45555555555555555
+2025-03-23 18:43:10,854 - INFO - Converting to absolute coordinates - x: 1505, y: 656
+2025-03-23 18:43:10,958 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:11,074 - INFO - Received message: {"type": "move", "x": 0.5729166666666666, "y": 0.4842592592592593}
+2025-03-23 18:43:11,074 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5729166666666666,
+  "y": 0.4842592592592593
+}
+2025-03-23 18:43:11,074 - INFO - Move event - x: 0.5729166666666666, y: 0.4842592592592593
+2025-03-23 18:43:11,074 - INFO - Converting to absolute coordinates - x: 1466, y: 697
+2025-03-23 18:43:11,178 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:11,288 - INFO - Received message: {"type": "move", "x": 0.565625, "y": 0.5}
+2025-03-23 18:43:11,289 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.565625,
+  "y": 0.5
+}
+2025-03-23 18:43:11,289 - INFO - Move event - x: 0.565625, y: 0.5
+2025-03-23 18:43:11,289 - INFO - Converting to absolute coordinates - x: 1448, y: 720
+2025-03-23 18:43:11,393 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:11,505 - INFO - Received message: {"type": "move", "x": 0.5635416666666667, "y": 0.5027777777777778}
+2025-03-23 18:43:11,505 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5635416666666667,
+  "y": 0.5027777777777778
+}
+2025-03-23 18:43:11,505 - INFO - Move event - x: 0.5635416666666667, y: 0.5027777777777778
+2025-03-23 18:43:11,505 - INFO - Converting to absolute coordinates - x: 1442, y: 724
+2025-03-23 18:43:11,609 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:43:11,718 - INFO - Received message: {"type": "move", "x": 0.5619791666666667, "y": 0.5092592592592593}
+2025-03-23 18:43:11,719 - INFO - Parsed data: {
+  "type": "move",
+  "x": 0.5619791666666667,
+  "y": 0.5092592592592593
+}
+2025-03-23 18:43:11,719 - INFO - Move event - x: 0.5619791666666667, y: 0.5092592592592593
+2025-03-23 18:43:11,719 - INFO - Converting to absolute coordinates - x: 1438, y: 733
+2025-03-23 18:43:11,824 - INFO - Sending response: {"status": "ok", "screen_width": 2560, "screen_height": 1440}
+2025-03-23 18:44:55,999 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 18:44:56,000 - INFO - Screen size: 2560x1440
+2025-03-23 18:44:56,000 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 18:44:56,000 - INFO - Log file: mouse_server.log
+2025-03-23 18:44:56,048 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 18:44:56,048 - INFO - Server started successfully!
+2025-03-23 18:45:02,961 - INFO - connection open
+2025-03-23 18:49:12,356 - ERROR - Error handling client: no close frame received or sent
+2025-03-23 18:49:12,357 - INFO - Client 127.0.0.1 disconnected after 0:04:09.395389
+2025-03-23 18:49:12,357 - INFO - Session summary - Moves: 247, Clicks: 0, Right clicks: 0, Double clicks: 0, Scrolls: 0
+2025-03-23 18:49:45,234 - INFO - connection open
+2025-03-23 18:50:56,341 - INFO - Client 127.0.0.1 disconnected after 0:01:11.106507
+2025-03-23 18:50:56,341 - INFO - Session summary - Moves: 64, Clicks: 0, Right clicks: 0, Double clicks: 0, Scrolls: 0
+2025-03-23 19:07:15,757 - INFO - connection open
+2025-03-23 19:10:35,825 - ERROR - Error handling client: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2025-03-23 19:10:35,825 - INFO - Client 127.0.0.1 disconnected after 0:03:20.068124
+2025-03-23 19:10:35,825 - INFO - Session summary - Moves: 61, Clicks: 0, Right clicks: 0, Double clicks: 0, Scrolls: 0
+2025-03-23 19:15:50,223 - INFO - Starting mouse control server on 0.0.0.0:3000
+2025-03-23 19:15:50,223 - INFO - Screen size: 2560x1440
+2025-03-23 19:15:50,224 - INFO - Using fractional coordinates (0,0) to (1,1)
+2025-03-23 19:15:50,224 - INFO - Log file: mouse_server.log
+2025-03-23 19:15:50,303 - INFO - server listening on 0.0.0.0:3000
+2025-03-23 19:15:50,304 - INFO - Server started successfully!
+2025-03-23 19:20:20,673 - INFO - connection open
+2025-03-23 19:24:06,121 - INFO - Client 127.0.0.1 disconnected after 0:03:45.447671
+2025-03-23 19:24:06,122 - INFO - Session summary - Moves: 618, Clicks: 20, Right clicks: 0, Double clicks: 0, Scrolls: 0

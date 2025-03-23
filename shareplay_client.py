@@ -8,6 +8,24 @@ import threading
 import time
 import logging
 
+# Try to import win32api from the correct package
+try:
+    from win32api import GetKeyState
+    MOUSE_SUPPORT = 'win32'
+except ImportError:
+    try:
+        # Add alternative implementations here for other OS
+        MOUSE_SUPPORT = 'none'
+        logging.warning("Windows API not available. Mouse click detection will be limited.")
+    except ImportError:
+        MOUSE_SUPPORT = 'none'
+        logging.warning("No mouse click detection system available.")
+
+# Virtual-Key Codes for mouse buttons
+VK_LBUTTON = 0x01  # Left mouse button
+VK_RBUTTON = 0x02  # Right mouse button
+VK_MBUTTON = 0x04  # Middle mouse button
+
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
@@ -27,13 +45,16 @@ class RemoteMouseClient:
         # Initialize event loop management
         self.loop = asyncio.new_event_loop()
         self.loop_thread = None
+
+        # Add message counter
+        self.message_count = 0
         
         self.connection_frame = tk.Frame(root)
         self.connection_frame.pack(pady=20)
         
         tk.Label(self.connection_frame, text="Server Address:").grid(row=0, column=0, padx=5, pady=5)
         self.server_entry = tk.Entry(self.connection_frame, width=20)
-        self.server_entry.insert(0, "wss://93dd-96-255-61-12.ngrok-free.app")  # Replace with actual IP
+        self.server_entry.insert(0, "ws://96.255.61.12:3000")  # For local testing
         self.server_entry.grid(row=0, column=1, padx=5, pady=5)
         
         self.connect_button = tk.Button(self.connection_frame, text="Connect", command=self.connect)
@@ -110,14 +131,22 @@ class RemoteMouseClient:
         
     async def connect_to_server(self, server_address):
         try:
-            self.websocket = await websockets.connect(server_address)
+            logging.info(f"Attempting to connect to {server_address}")
+            self.websocket = await asyncio.wait_for(
+                websockets.connect(server_address),
+                timeout=10.0  # 10 second timeout
+            )
             
+            logging.info("Connection established, sending ping")
             # Send a ping message to get server info
             await self.websocket.send(json.dumps({
                 "type": "ping",
                 "message": "Hello from client"
             }))
+            self.message_count += 1
+            logging.info(f"Messages sent: {self.message_count}")
             
+            logging.info("Waiting for server response")
             response = await self.websocket.recv()
             server_info = json.loads(response)
             
@@ -126,6 +155,12 @@ class RemoteMouseClient:
                 self.remote_height = server_info["screen_height"]
             
             self.root.after(0, self.update_ui_connected)
+        except asyncio.TimeoutError:
+            error_msg = "Connection timed out. Please check if the server is running and the address is correct."
+            self.root.after(0, lambda: self.update_ui_error(error_msg))
+        except ConnectionRefusedError:
+            error_msg = "Connection refused. Please check if the server is running."
+            self.root.after(0, lambda: self.update_ui_error(error_msg))
         except Exception as e:
             self.root.after(0, lambda: self.update_ui_error(str(e)))
         
@@ -175,6 +210,9 @@ class RemoteMouseClient:
     async def track_mouse(self):
         try:
             # Track mouse and send events while tracking is True
+            last_click_time = 0  # To prevent duplicate clicks
+            last_button_states = {'left': False, 'middle': False, 'right': False}
+            
             while self.tracking and self.websocket:
                 # Get current mouse position as fractional coordinates
                 x, y = pyautogui.position()
@@ -184,7 +222,36 @@ class RemoteMouseClient:
                 # Calculate fractional position
                 current_pos = (x_frac, y_frac)
                 
-                # Only send if position changed significantly
+                # Check for mouse buttons
+                current_time = time.time()
+                
+                if MOUSE_SUPPORT == 'win32':
+                    # Use Windows API for mouse detection
+                    current_button_states = {
+                        'left': GetKeyState(VK_LBUTTON) < 0,
+                        'right': GetKeyState(VK_RBUTTON) < 0,
+                        'middle': GetKeyState(VK_MBUTTON) < 0
+                    }
+                    
+                    # Detect button press (transition from up to down)
+                    for button, is_down in current_button_states.items():
+                        if is_down and not last_button_states[button]:
+                            if current_time - last_click_time > 0.1:  # 100ms debounce
+                                message = {
+                                    "type": "click",
+                                    "button": button,
+                                    "x": x_frac,
+                                    "y": y_frac
+                                }
+                                await self.websocket.send(json.dumps(message))
+                                self.message_count += 1
+                                logging.info(f"Click sent: {button} at ({x_frac:.3f}, {y_frac:.3f})")
+                                await self.websocket.recv()  # Wait for acknowledgment
+                                last_click_time = current_time
+                    
+                    last_button_states = current_button_states
+                
+                # Only send movement if position changed significantly
                 if abs(current_pos[0] - self.last_position[0]) > 0.001 or abs(current_pos[1] - self.last_position[1]) > 0.001:
                     self.last_position = current_pos
                     message = {
@@ -193,15 +260,12 @@ class RemoteMouseClient:
                         "y": y_frac
                     }
                     await self.websocket.send(json.dumps(message))
+                    self.message_count += 1
                     await self.websocket.recv()  # Wait for acknowledgment
-                    
-                # Check for mouse clicks
-                # Note: PyAutoGUI doesn't provide a direct way to check if buttons are pressed
-                # You would need to use a different approach for real-time click detection
-                # This simplified example doesn't detect clicks
                 
                 # Small delay to prevent flooding the connection
                 await asyncio.sleep(0.05)
+                
         except asyncio.CancelledError:
             # Task was cancelled, exit gracefully
             logging.info("Mouse tracking cancelled")
@@ -239,4 +303,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = RemoteMouseClient(root)
     root.mainloop()
-    
